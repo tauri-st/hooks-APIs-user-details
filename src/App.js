@@ -12,8 +12,8 @@ const App = () => {
     const fetchData = async () => {
       try {
         const request = await fetch("https://randomuser.me/api/");
-        const response = await request.json();
-        console.log(response);
+        const {results} = await request.json();
+        console.log(results);
       } catch (error) {
         console.log("Oh no something went wrong!", error)
       }
