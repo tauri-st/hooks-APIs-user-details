@@ -12,6 +12,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         const request = await fetch("https://randomuser.me/api/");
+        response = await request.json();
       } catch {
 
       }
