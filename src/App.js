@@ -12,11 +12,13 @@ const App = () => {
     const fetchData = async () => {
       try {
         const request = await fetch("https://randomuser.me/api/");
-        response = await request.json();
+        const response = await request.json();
+        console.log(response);
       } catch (error) {
         console.log("Oh no something went wrong!", error)
       }
     };
+    fetchData();
   }, []);
 
   return (
