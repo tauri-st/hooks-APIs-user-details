@@ -36,7 +36,7 @@ const App = () => {
     <div className="App">
       {/*The Loader component comes from the react-feather library*/}
       {status === "loading" && <Loader />}
-      {status === "success" && <UserDetails />}
+      {status === "success" && <UserDetails prop={data} />}
       {status === "error" && <p>"Something went wrong"</p>}
     </div>
   );
