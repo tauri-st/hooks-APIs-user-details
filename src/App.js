@@ -13,8 +13,8 @@ const App = () => {
       try {
         const request = await fetch("https://randomuser.me/api/");
         response = await request.json();
-      } catch {
-
+      } catch (error) {
+        console.log("Oh no something went wrong!", error)
       }
     };
   }, []);
