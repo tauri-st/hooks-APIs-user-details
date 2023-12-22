@@ -34,6 +34,8 @@ const App = () => {
 
   return (
     <div className="App">
+      {/*The Loader component comes from the react-feather library*/}
+      {status === "loading" && <Loader />}
       {status === "success" && <UserDetails />}
     </div>
   );
