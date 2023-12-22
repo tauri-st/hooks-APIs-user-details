@@ -1,4 +1,4 @@
-const UserDetails = () => (
+const UserDetails = ({data}) => (
   <div className="user-details">
     <p className="name "></p>
     <p className="country"></p>
