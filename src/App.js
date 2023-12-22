@@ -11,6 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setStatus("loading");
         const request = await fetch("https://randomuser.me/api/");
         // Check out what request gives before extracting JSON 
         // to see the status of the request, looking for
