@@ -3,7 +3,9 @@ const UserDetails = ({data}) => (
     <p className="name">{data.name.title} {data.name.first} {data.name.last}</p>
     <p className="country">{data.location.country}</p>
     <p className="email">{data.email}</p>
-    <figure>{/* Place image tag here */}</figure>
+    <figure>
+      <img src={data.picture.large} alt="Random user avatar"></img>
+    </figure>
     <button>Fetch Another</button>
   </div>
 );
