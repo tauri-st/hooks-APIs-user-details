@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <UserDetails />
+      {status === "success" && <UserDetails />}
     </div>
   );
 };
