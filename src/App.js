@@ -24,7 +24,8 @@ const App = () => {
         console.log(data);
         //console.log(results[0]);
       } catch (error) {
-        console.log("Oh no something went wrong!", error)
+        console.log("Oh no something went wrong!", error);
+        setStatus("error");
       }
     };
     fetchData();
