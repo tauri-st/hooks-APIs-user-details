@@ -18,6 +18,7 @@ const App = () => {
         // request.status = 200 success status
         console.log(request);
         const {results} = await request.json();
+
         if (request.status === 200) {
           setData(results[0]);
           setStatus("success");
@@ -34,10 +35,10 @@ const App = () => {
 
   return (
     <div className="App">
+      {status === "error" && <p>"Something went wrong"</p>}
       {/*The Loader component comes from the react-feather library*/}
       {status === "loading" && <Loader />}
       {status === "success" && <UserDetails prop={data} />}
-      {status === "error" && <p>"Something went wrong"</p>}
     </div>
   );
 };
