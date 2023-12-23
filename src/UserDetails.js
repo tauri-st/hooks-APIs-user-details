@@ -1,4 +1,4 @@
-const UserDetails = ({data}) => (
+const UserDetails = ({data, fetchData}) => (
   <div className="user-details">
     <p className="name">{data.name.title} {data.name.first} {data.name.last}</p>
     <p className="country">{data.location.country}</p>

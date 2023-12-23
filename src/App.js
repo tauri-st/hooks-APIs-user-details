@@ -45,7 +45,7 @@ const App = () => {
       {/*The Loader component comes from the react-feather library*/}
       {status === "loading" && <Loader />}
       {status === "success" && (
-        <UserDetails data={data} />
+        <UserDetails data={data} fetchData={fetchData}/>
       )}
     </div>
   );
