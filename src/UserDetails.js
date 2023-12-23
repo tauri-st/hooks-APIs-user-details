@@ -6,7 +6,7 @@ const UserDetails = ({data, fetchData}) => (
     <figure>
       <img src={data.picture.large} alt="Random user avatar"></img>
     </figure>
-    <button>Fetch Another</button>
+    <button onClick={fetchData}>Fetch Another</button>
   </div>
 );
 
