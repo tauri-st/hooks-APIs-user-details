@@ -9,7 +9,8 @@ const App = () => {
   const [status, setStatus] = useState("loading");
 
   // fetchData needs to be outside of the useEffect hook so that
-  // it is available to to pass to UserDetails as a prop
+  // it is available to to pass to UserDetails as a prop to attach
+  // to the "Fetch Another" button
   const fetchData = async () => {
     try {
       setStatus("loading");
